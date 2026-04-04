@@ -41,9 +41,9 @@
             "Project Name": "={{ $json.body.projectName }}",
             "LinkedIn Post": "={{ $json.body.linkedinPost }}",
             "GitHub Description": "={{ $json.body.githubDescription  }}",
-            "(T) Project Name": "=",
-            "(T) LinkedIn Post": "=",
-            "(T) Github Description": "="
+            "(T) Project Name": "={{ $json.body.projectNameTR }}",
+            "(T) LinkedIn Post": "={{ $json.body.linkedinPostTR }}",
+            "(T) Github Description": "={{ $json.body.githubDescriptionTR  }}"
           },
           "matchingColumns": [],
           "schema": [
@@ -151,7 +151,7 @@
     "executionOrder": "v1",
     "binaryMode": "separate"
   },
-  "versionId": "3afeb74d-5f3d-4c2c-9b57-c13a4f3bc15a",
+  "versionId": "7c0c1a7b-f4ae-423d-8a51-664d1f2fb4a4",
   "meta": {
     "templateCredsSetupCompleted": true,
     "instanceId": "df7be0ae8fd4b2521d95fc3246a77241cbbfa36f95495375d7c87d625669de24"

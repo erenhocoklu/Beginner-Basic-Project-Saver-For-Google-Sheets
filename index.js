@@ -31,15 +31,18 @@ server.tool( // saves projects
   "save_project",
   "Saves a project summary to Google Sheets. Call this when the user says 'save this project'.",
   {
-    projectName: z.string().describe("Short name of the project, e.g. 'Weather Dashboard App'"),
-    linkedinPost: z.string().describe("A ready-to-post LinkedIn update about what was built (2-4 paragraphs)"),
-    githubDescription: z.string().describe("A concise GitHub repo description (1-2 sentences, technical)")
+    projectName: z.string().describe("Short name of the project in English"),
+    linkedinPost: z.string().describe("Formal LinkedIn post in English"),
+    githubDescription: z.string().describe("Technical GitHub description in English"),
+    projectNameTR: z.string().describe("Project name translated into Turkish"),
+    linkedinPostTR: z.string().describe("Formal LinkedIn post translated into Turkish"),
+    githubDescriptionTR: z.string().describe("Technical GitHub description translated into Turkish")
   },
-  async ({ projectName, linkedinPost, githubDescription }) => {
+  async ({projectName, linkedinPost, githubDescription, projectNameTR, linkedinPostTR, githubDescriptionTR}) => {
     const response = await fetch("http://localhost:5678/webhook/project-saver", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ projectName, linkedinPost, githubDescription })
+      body: JSON.stringify({projectName, linkedinPost, githubDescription, projectNameTR, linkedinPostTR, githubDescriptionTR})
     });
 
     if (!response.ok) {
