@@ -4,7 +4,7 @@
     {
       "parameters": {
         "httpMethod": "POST",
-        "path": "project-saver",
+        "path": "YOUR_WEBHOOK_PATH",
         "options": {}
       },
       "type": "n8n-nodes-base.webhook",
@@ -22,17 +22,17 @@
         "operation": "append",
         "documentId": {
           "__rl": true,
-          "value": "19TjDhwVSe6BKKgWX5u9BBEEOU-fCVO1dHsKWxZ_xAtc",
+          "value": "YOUR_SHEET_ID",
           "mode": "list",
           "cachedResultName": "Saved Projects",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/19TjDhwVSe6BKKgWX5u9BBEEOU-fCVO1dHsKWxZ_xAtc/edit?usp=drivesdk"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit?usp=drivesdk"
         },
         "sheetName": {
           "__rl": true,
           "value": "gid=0",
           "mode": "list",
           "cachedResultName": "Sheet1",
-          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/19TjDhwVSe6BKKgWX5u9BBEEOU-fCVO1dHsKWxZ_xAtc/edit#gid=0"
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit#gid=0"
         },
         "columns": {
           "mappingMode": "defineBelow",
